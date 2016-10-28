@@ -1,6 +1,6 @@
 jQuery Racing Game - Exercise project
 
-###DEMO:http://marioiliev.com/demos/battle-car/
+###DEMO: http://marioiliev.com/demos/battle-car/
 
 This project was made with inspiration by javascript and it's endless possibilities.
 
