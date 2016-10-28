@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Battle Car</title>
+	<meta name="description" content="2D car game. Fun game to play.">
+	<meta property="og:image" content="http://marioiliev.com/demos/battle-car/images/social_img.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="wrap">
+	<div class="start_box">
+		<div class="load_bg"></div>
+
+		<div class="intro_box">
+			<div class="logo"></div>
+
+			<div class="loading_box">
+				<span>Loading</span>
+				<div class="loader">
+					<div class="fill"></div>
+				</div>
+			</div>
+
+			<div class="start_legend">
+				<div class="arrow left">- Turn <span>left</span>.</div>
+				<div class="arrow right">- Turn <span>right</span>.</div>
+				<div class="arrow up">- <span>Shoot</span> enemies when you collect bullets.</div>
+				<div class="arrow down">- <span>Slow</span> enemies for a short time.</div>
+				<div class="enter_btn">- Press <span>Enter</span> key to restart the game.</div>
+				<div class="separator"></div>
+				<div class="start_btn"></div>
+				<div class="start_txt">Or press Space key to <span>start</span> the game.</div>
+			</div>
+		</div>
+
+		<div class="copy">&copy; Game created by <a href="http://marioiliev.com/" target="_blank">Mario Iliev</a></div>
+	</div>
+
+	<div class="path"></div>
+
+	<div class="inner">
+		<div class="special_left">
+			<div class="fill"></div>
+			<div class="text"></div>
+		</div>
+
+		<div class="money">Coins: <span>0</span></div>
+		<div class="bullets">Bullets: <span>0</span></div>
+		<div class="level">Level: <span></span></div>
+		<div class="score">Score: <span>0</span></div>
+
+ 		<div class="car">
+ 			<div class="car_shield"></div>
+ 			<div class="headlights"></div>
+ 			<div class="explode"></div>
+ 			<div class="night"></div>
+ 		</div>
+
+ 		<div class="spikes"></div>
+
+ 		<div class="top_3_shoots"></div>
+
+ 		<div class="boss">
+ 			<div class="explode"></div>
+ 		</div>
+
+ 		<div class="boss_blood">
+ 			<div class="fill"></div>
+ 		</div>
+ 		
+ 		<div class="blast"></div>
+
+ 		<div class="coin">
+ 			<img src="images/lazy.png">
+ 		</div>
+
+ 		<div class="shield"></div>
+
+ 		<div class="bullet">
+ 			<img src="images/lazy.png">
+ 		</div>
+
+ 		<div class="distraction"></div>
+ 
+ 		<div class="obj">
+ 			<div class="explode"></div>
+ 		</div>
+
+ 		<div class="cloud_left"></div>
+ 		<div class="cloud_right"></div>
+	</div>
+
+	<div class="plane"></div>
+
+	<div class="over">
+		<div class="over_box">
+			<div class="text">Game Over</div>
+			<div class="record">
+				<div class="score_box">
+					Score <span></span>
+				</div>
+				<div class="best_box">
+					Best Score: <span></span>
+				</div>
+				<div class="fb-like" data-href="http://marioiliev.com/demos/battle-car/" data-layout="box_count" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+			</div>
+			<div class="over_legend">
+				Press <b>Enter</b> to restart.
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+</body>
+</html>
